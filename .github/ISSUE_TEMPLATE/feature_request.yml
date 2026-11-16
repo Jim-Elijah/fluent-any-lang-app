@@ -1,0 +1,43 @@
+name: "✨ Feature Request / 功能建议"
+description: "Suggest an idea, enhancement, or new feature / 提出新功能提议、体验优化或改进建议"
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        We welcome ideas for both the Web application and the upcoming Flutter cross-platform App (fluent-any-lang-app)!
+        欢迎为 Web 应用以及即将推出的 Flutter 跨端应用（fluent-any-lang-app）提出你的宝贵功能构想与优化建议！
+  - type: dropdown
+    id: target_platform
+    attributes:
+      label: "Target Scope / 适用端与目标范围"
+      description: "Which version does this feature request apply to? / 该功能主要针对哪一端？"
+      options:
+        - "Both Web & Flutter App / Web 与跨端通用"
+        - "Flutter App (Mobile / Desktop) / 跨端原生独占需求"
+        - "Web / 网页端"
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: "Problem or User Need / 业务痛点或使用场景"
+      description: "Is your feature request related to a problem or specific learning pain point? / 该需求旨在解决什么痛点或哪类具体的语言精听跟读场景？"
+      placeholder: "e.g. I'm always frustrated when... / 例如：我在锁屏状态下无法听写下一句..."
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: "Proposed Solution / 建议方案或期望效果"
+      description: "Describe the solution you'd like or how you imagine it working. / 详细描述你期望的功能体验或实现方式。"
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: "Alternatives Considered / 替代方案或竞品参考"
+      description: "Any alternative solutions, UI references, or workarounds you've considered? / 您是否考虑过其他折中方案或有类似体验的产品参考？"
+    validations:
+      required: false

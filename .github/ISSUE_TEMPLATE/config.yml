@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: "Official Website / 官方主页"
+    url: "https://app.fal.jimelijah.com"
+    about: "Visit FluentAnyLang App official website / 访问 FluentAnyLang App 官方网站与产品更新"
+  - name: "Community Discussions / 社区讨论区"
+    url: "https://github.com/Jim-Elijah/fluent-any-lang-app/discussions"
+    about: "Ask questions, share ideas, or discuss with the community / 提问答疑、创意交流与自由讨论"

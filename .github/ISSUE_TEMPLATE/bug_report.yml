@@ -1,0 +1,65 @@
+name: "🐛 Bug Report / 缺陷报告"
+description: "Report a bug or unexpected behavior / 提交缺陷报告或异常行为"
+title: "[Bug]: "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting an issue! Please provide as much information as possible to help us reproduce and fix it.
+        感谢提交缺陷反馈！请尽可能详细地填写以下信息，以帮助我们快速定位与修复问题。
+  - type: dropdown
+    id: platform
+    attributes:
+      label: "Platform / 运行平台与客户端"
+      description: "Where did you encounter the bug? / 您在哪个端遇到了此问题？"
+      options:
+        - "Web / 浏览器端 (fluent-any-lang Web)"
+        - "Flutter App - iOS"
+        - "Flutter App - Android"
+        - "Flutter App - macOS"
+        - "Flutter App - Windows"
+        - "Flutter App - Linux"
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: "Environment Details / 运行环境与版本"
+      description: "e.g., Chrome 124 / iOS 17.4 / macOS 14.3 / App Version 1.0.0 / 例如：Chrome 124 或 App v1.0.0"
+      placeholder: "OS, Browser/App Version..."
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: "Bug Description / 缺陷简述"
+      description: "A clear and concise description of what the bug is. / 清晰简要地描述该缺陷表现。"
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: "Steps to Reproduce / 复现步骤"
+      description: "Step-by-step instructions to reproduce the problem. / 请提供可供复现的具体步骤。"
+      placeholder: |
+        1. Open '...'
+        2. Import audio/video file '...' and subtitle '...'
+        3. Click on '...'
+        4. See error
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: "Expected Behavior / 预期行为"
+      description: "What did you expect to happen? / 您预期的正确交互或表现是什么？"
+    validations:
+      required: true
+  - type: textarea
+    id: logs_or_media
+    attributes:
+      label: "Console Logs, Screenshots, or Media / 错误日志、控制台输出或截图"
+      description: "Paste logs, error stack traces, or drag-and-drop screenshots/screen recordings. / 粘贴控制台错误日志、崩溃堆栈或拖拽上传截图/录屏。"
+    validations:
+      required: false

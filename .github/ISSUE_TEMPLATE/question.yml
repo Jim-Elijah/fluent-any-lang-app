@@ -1,0 +1,29 @@
+name: "❓ Question / 使用咨询与求助"
+description: "Ask a question about usage, audio formats, or learning workflows / 针对使用方法、格式兼容或学习流的答疑求助"
+title: "[Question]: "
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Have a question about how to use FluentAnyLang or how to get the best shadowing practice? Ask here!
+        对 FluentAnyLang 的使用、最佳精听跟读实践或功能有任何疑问？欢迎在此提问交流！
+  - type: dropdown
+    id: category
+    attributes:
+      label: "Question Category / 咨询类别"
+      options:
+        - "Usage & Learning Workflow / 功能用法与学习流"
+        - "Audio/Video & Subtitle Formats / 音视频与字幕格式兼容"
+        - "Flutter App Release & Early Access / Flutter 客户端发布与内测"
+        - "Local Data & Privacy / 本地存储与数据隐私"
+        - "Other / 其他"
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: "Question Details / 详细问题描述"
+      description: "Please describe what you are trying to achieve and what question you have. / 请详细描述您的目标、困惑以及已尝试过的操作。"
+    validations:
+      required: true

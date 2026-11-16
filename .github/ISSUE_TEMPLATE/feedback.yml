@@ -1,0 +1,35 @@
+name: "💬 General Feedback / 用户体验与反馈"
+description: "Share your overall experience, UI/UX feedback, or ideas for FluentAnyLang / 分享使用体验、UI/UX 感受或对客户端的期待"
+title: "[Feedback]: "
+labels: ["feedback"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        We would love to hear your thoughts! Your feedback directly shapes our product roadmap.
+        非常期待倾听你的声音！你的每一次反馈都将直接推动产品的演进与打磨。
+  - type: dropdown
+    id: feedback_type
+    attributes:
+      label: "Feedback Topic / 反馈主题"
+      options:
+        - "Flutter App Experience / 对跨端 Flutter 客户端的期望与建议"
+        - "UI & Visual Design / 界面视觉与排版体验"
+        - "Audio & Waveform Interaction / 音频播放与波形图交互感受"
+        - "Overall Impression / 综合感受与使用心得"
+    validations:
+      required: true
+  - type: textarea
+    id: message
+    attributes:
+      label: "Your Feedback / 详细体验反馈"
+      description: "What did you like? What could be improved? / 哪些地方击中了你的痛点？哪些环节让你感到不顺畅？"
+    validations:
+      required: true
+  - type: input
+    id: contact
+    attributes:
+      label: "Contact or Beta Testing Interest (Optional) / 联系方式或内测意向（选填）"
+      description: "Leave your email/social handle if you'd like to participate in future beta testing. / 若有意愿参与后续跨端内测，可留下您的邮箱或社交账号。"
+    validations:
+      required: false
